@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "farmersknives:rose_gold_knife",
+    "farmersknives:gilded_netherite_knife",
+    "farmersknives:amethyst_knife",
+    "farmersknives:aeternium_knife",
+    "farmersknives:thallasium_knife",
+    "farmersknives:terminite_knife",
+    "farmersknives:cincinnasite_knife",
+    "farmersknives:cincinnasite_knife_diamond",
+    "farmersknives:nether_ruby_knife",
+    "farmersknives:bone_knife",
+    "farmersknives:emerald_knife",
+    "farmersknives:enderite_knife",
+    "farmersknives:copper_knife",
+    "farmersknives:obsidian_knife"
+  ]
+}

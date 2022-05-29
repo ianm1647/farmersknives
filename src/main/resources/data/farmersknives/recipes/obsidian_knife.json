@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m",
+    "s "
+  ],
+  "key": {
+    "m": {
+      "item": "obsidianequipment:obsidian_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "farmersknives:obsidian_knife"
+  }
+}

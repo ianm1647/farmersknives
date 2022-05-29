@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "farmersknives:thallasium_knife"
+  },
+  "result": "betterend:thallasium_nugget",
+  "experience": 0.1,
+  "cookingtime": 100
+}
