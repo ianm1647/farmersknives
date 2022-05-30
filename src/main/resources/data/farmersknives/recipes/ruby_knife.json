@@ -6,13 +6,13 @@
   ],
   "key": {
     "m": {
-      "item": "minecraft:obsidian"
+      "tag": "c:rubies"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "farmersknives:obsidian_knife"
+    "item": "farmersknives:ruby_knife"
   }
 }

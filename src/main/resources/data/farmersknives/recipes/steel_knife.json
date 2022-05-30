@@ -6,13 +6,13 @@
   ],
   "key": {
     "m": {
-      "item": "minecraft:bone"
+      "tag": "c:steel_ingots"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "farmersknives:bone_knife"
+    "item": "farmersknives:steel_knife"
   }
 }

@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "farmersknives:obsidian_knife"
-  },
-  "result": "obsidianequipment:obsidian_shard",
-  "experience": 0.1,
-  "cookingtime": 100
-}

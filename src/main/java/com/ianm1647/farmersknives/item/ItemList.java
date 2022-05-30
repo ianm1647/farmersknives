@@ -17,9 +17,10 @@ public class ItemList {
 
     public static Item ENDERITE_KNIFE;
 
-    public static Item AMETHYST_KNIFE;
-    public static Item BONE_KNIFE;
-    public static Item COPPER_KNIFE;
     public static Item EMERALD_KNIFE;
+    public static Item RUBY_KNIFE;
+    public static Item AMETHYST_KNIFE;
+    public static Item STEEL_KNIFE;
     public static Item OBSIDIAN_KNIFE;
+    public static Item COPPER_KNIFE;
 }

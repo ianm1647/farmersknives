@@ -2,16 +2,8 @@
   "item.farmersknives.rose_gold_knife": "Rose Gold Knife",
   "item.farmersknives.gilded_netherite_knife": "Gilded Netherite Knife",
 
-  "item.farmersknives.aeternium_knife_blade": "Aeternium Knife Blade",
-  "item.farmersknives.aeternium_knife_handle": "Aeternium Knife Handle",
   "item.farmersknives.aeternium_knife": "Aeternium Knife",
-
-  "item.farmersknives.thallasium_knife_blade": "Thallasium Knife Blade",
-  "item.farmersknives.thallasium_knife_handle": "Thallasium Knife Handle",
   "item.farmersknives.thallasium_knife": "Thallasium Knife",
-
-  "item.farmersknives.terminite_knife_blade": "Terminite Knife Blade",
-  "item.farmersknives.terminite_knife_handle": "Terminite Knife Handle",
   "item.farmersknives.terminite_knife": "Terminite Knife",
 
   "item.farmersknives.cincinnasite_knife": "Cincinnasite Knife",
@@ -20,9 +12,10 @@
 
   "item.farmersknives.enderite_knife": "Enderite Knife",
 
-  "item.farmersknives.bone_knife": "Bone Knife",
-  "item.farmersknives.copper_knife": "Copper Knife",
+  "item.farmersknives.emerald_knife": "Emerald Knife",
+  "item.farmersknives.ruby_knife": "Ruby Knife",
   "item.farmersknives.amethyst_knife": "Amethyst Knife",
+  "item.farmersknives.steel_knife": "Steel Knife",
   "item.farmersknives.obsidian_knife": "Obsidian Knife",
-  "item.farmersknives.emerald_knife": "Emerald Knife"
+  "item.farmersknives.copper_knife": "Copper Knife"
 }

@@ -1,32 +1,34 @@
 package com.ianm1647.farmersknives.registry;
 
-import com.exline.amethystequipment.item.AmethystToolMaterial;
-import com.exline.boneequipment.item.BoneToolMaterial;
-import com.exline.emeraldequipment.item.EmeraldToolMaterial;
-import com.exline.exlinecopperequipment.item.CopperToolMaterial;
-import com.exline.obsidianequipment.ModToolMaterials;
 import com.ianm1647.farmersknives.FarmersKnives;
 import com.ianm1647.farmersknives.item.ItemList;
 import com.ianm1647.farmersknives.item.NetherKnifeItem;
+import com.kwpugh.emerald_tools.init.ItemInit;
 import com.nhoryzon.mc.farmersdelight.FarmersDelightMod;
 import com.nhoryzon.mc.farmersdelight.item.KnifeItem;
+import com.nhoryzon.mc.farmersdelight.tag.Tags;
 import dqu.additionaladditions.material.GildedNetheriteToolMaterial;
 import dqu.additionaladditions.material.RoseGoldToolMaterial;
 import net.enderitemc.enderitemod.materials.EnderiteMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import paulevs.betternether.items.materials.BNToolMaterial;
+import ru.bclib.api.tag.TagAPI;
 import ru.betterend.item.material.EndToolMaterial;
 
-import java.util.List;
-
-public class ItemRegistry {
+public class ModRegistry {
     private static final ItemGroup group = FarmersDelightMod.ITEM_GROUP;
+
+    public static void registerThis() {
+        registerItems();
+        registerTags();
+    }
 
     public static void registerItems() {
         if(FabricLoader.getInstance().isModLoaded("additionaladditions")) {
@@ -34,10 +36,6 @@ public class ItemRegistry {
                     new FabricItemSettings().group(group));
             ItemList.GILDED_NETHERITE_KNIFE = knife("gilded_netherite_knife", GildedNetheriteToolMaterial.MATERIAL,
                     new FabricItemSettings().group(group).fireproof());
-        }
-        if(FabricLoader.getInstance().isModLoaded("amethystequipment")) {
-            ItemList.AMETHYST_KNIFE = knife("amethyst_knife", AmethystToolMaterial.INSTANCE,
-                    new FabricItemSettings().group(group));
         }
         if(FabricLoader.getInstance().isModLoaded("betterend")) {
             ItemList.AETERNIUM_KNIFE = knife("aeternium_knife", EndToolMaterial.AETERNIUM,
@@ -52,25 +50,48 @@ public class ItemRegistry {
             ItemList.CINCINNASITE_DIAMOND_KNIFE = netherKnife("cincinnasite_knife_diamond", BNToolMaterial.CINCINNASITE_DIAMOND);
             ItemList.NETHER_RUBY_KNIFE = netherKnife("nether_ruby_knife", BNToolMaterial.NETHER_RUBY);
         }
-        if(FabricLoader.getInstance().isModLoaded("boneequipment")) {
-            ItemList.BONE_KNIFE = knife("bone_knife", BoneToolMaterial.INSTANCE,
-                    new FabricItemSettings().group(group));
-        }
-        if(FabricLoader.getInstance().isModLoaded("emeraldequipment")) {
-            ItemList.EMERALD_KNIFE = knife("emerald_knife", EmeraldToolMaterial.INSTANCE,
-                    new FabricItemSettings().group(group));
-        }
         if(FabricLoader.getInstance().isModLoaded("enderitemod")) {
             ItemList.ENDERITE_KNIFE = knife("enderite_knife", EnderiteMaterial.ENDERITE,
                     new FabricItemSettings().group(group).fireproof());
         }
-        if(FabricLoader.getInstance().isModLoaded("exlinecopperequipment")) {
-            ItemList.COPPER_KNIFE = knife("copper_knife", CopperToolMaterial.INSTANCE,
+        if(FabricLoader.getInstance().isModLoaded("emerald_tools")) {
+            ItemList.EMERALD_KNIFE = knife("emerald_knife", ItemInit.EMERALD_TOOL_MATERIAL,
+                    new FabricItemSettings().group(group));
+            ItemList.RUBY_KNIFE = knife("ruby_knife", ItemInit.RUBY_TOOL_MATERIAL,
+                    new FabricItemSettings().group(group));
+            ItemList.AMETHYST_KNIFE = knife("amethyst_knife", ItemInit.AMETHYST_TOOL_MATERIAL,
+                    new FabricItemSettings().group(group));
+            ItemList.STEEL_KNIFE = knife("steel_knife", ItemInit.STEEL_TOOL_MATERIAL,
+                    new FabricItemSettings().group(group));
+            ItemList.OBSIDIAN_KNIFE = knife("obsidian_knife", ItemInit.OBSIDIAN_TOOL_MATERIAL,
+                    new FabricItemSettings().group(group));
+            ItemList.COPPER_KNIFE = knife("copper_knife", ItemInit.COPPER_TOOL_MATERIAL,
                     new FabricItemSettings().group(group));
         }
-        if(FabricLoader.getInstance().isModLoaded("obsidianequipment")) {
-            ItemList.OBSIDIAN_KNIFE = knife("obsidian_knife", ModToolMaterials.OBSIDIAN,
-                    new FabricItemSettings().group(group));
+    }
+
+    public static void registerTags() {
+        if(FabricLoader.getInstance().isModLoaded("additionaladditions")) {
+            tag(ItemList.ROSE_GOLD_KNIFE);
+            tag(ItemList.GILDED_NETHERITE_KNIFE);
+        }
+        if(FabricLoader.getInstance().isModLoaded("betterend")) {
+            tag(ItemList.AETERNIUM_KNIFE);
+            tag(ItemList.THALLASIUM_KNIFE);
+            tag(ItemList.TERMINITE_KNIFE);
+        }
+        if(FabricLoader.getInstance().isModLoaded("betterend")) {
+            tag(ItemList.CINCINNASITE_KNIFE);
+            tag(ItemList.CINCINNASITE_DIAMOND_KNIFE);
+            tag(ItemList.NETHER_RUBY_KNIFE);
+        }
+        if(FabricLoader.getInstance().isModLoaded("emerald_tools")) {
+            tag(ItemList.EMERALD_KNIFE);
+            tag(ItemList.RUBY_KNIFE);
+            tag(ItemList.AMETHYST_KNIFE);
+            tag(ItemList.STEEL_KNIFE);
+            tag(ItemList.OBSIDIAN_KNIFE);
+            tag(ItemList.COPPER_KNIFE);
         }
     }
 
@@ -82,5 +103,9 @@ public class ItemRegistry {
     private static Item netherKnife(String name, ToolMaterial material) {
         return Registry.register(Registry.ITEM, new Identifier(FarmersKnives.MODID, name),
                 new NetherKnifeItem(material, new FabricItemSettings().group(group)));
+    }
+
+    private static void tag(ItemConvertible item) {
+        TagAPI.addItemTag(Tags.KNIVES, item);
     }
 }
