@@ -10,8 +10,6 @@ import com.ianm1647.farmersknives.item.ItemList;
 import com.ianm1647.farmersknives.item.NetherKnifeItem;
 import com.nhoryzon.mc.farmersdelight.FarmersDelightMod;
 import com.nhoryzon.mc.farmersdelight.item.KnifeItem;
-import dqu.additionaladditions.config.Config;
-import dqu.additionaladditions.config.ConfigValues;
 import dqu.additionaladditions.material.GildedNetheriteToolMaterial;
 import dqu.additionaladditions.material.RoseGoldToolMaterial;
 import net.enderitemc.enderitemod.materials.EnderiteMaterial;
@@ -25,19 +23,17 @@ import net.minecraft.util.registry.Registry;
 import paulevs.betternether.items.materials.BNToolMaterial;
 import ru.betterend.item.material.EndToolMaterial;
 
+import java.util.List;
+
 public class ItemRegistry {
     private static final ItemGroup group = FarmersDelightMod.ITEM_GROUP;
 
     public static void registerItems() {
         if(FabricLoader.getInstance().isModLoaded("additionaladditions")) {
-            if(Config.getBool(ConfigValues.ROSE_GOLD)) {
-                ItemList.ROSE_GOLD_KNIFE = knife("rose_gold_knife", RoseGoldToolMaterial.MATERIAL,
-                        new FabricItemSettings().group(group));
-            }
-            if(Config.getBool(ConfigValues.GILDED_NETHERITE)) {
-                ItemList.GILDED_NETHERITE_KNIFE = knife("gilded_netherite_knife", GildedNetheriteToolMaterial.MATERIAL,
-                        new FabricItemSettings().group(group).fireproof());
-            }
+            ItemList.ROSE_GOLD_KNIFE = knife("rose_gold_knife", RoseGoldToolMaterial.MATERIAL,
+                    new FabricItemSettings().group(group));
+            ItemList.GILDED_NETHERITE_KNIFE = knife("gilded_netherite_knife", GildedNetheriteToolMaterial.MATERIAL,
+                    new FabricItemSettings().group(group).fireproof());
         }
         if(FabricLoader.getInstance().isModLoaded("amethystequipment")) {
             ItemList.AMETHYST_KNIFE = knife("amethyst_knife", AmethystToolMaterial.INSTANCE,

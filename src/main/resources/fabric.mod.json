@@ -28,7 +28,8 @@
     "fabric": "*",
     "minecraft": "~1.18.2",
     "java": ">=17",
-    "farmersdelight": "*"
+    "farmersdelight": "*",
+    "bclib": "*"
   },
   "suggests": {
     "additionaladditions": "*",
