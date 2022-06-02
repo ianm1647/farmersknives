@@ -12,5 +12,7 @@ public class FarmersKnives implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModRegistry.registerThis();
+
+		LOGGER.info("Farmer's Knives loaded!");
 	}
 }

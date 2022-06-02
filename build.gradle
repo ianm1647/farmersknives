@@ -22,6 +22,10 @@ repositories {
 	maven { //CurseForge
 		url "https://www.cursemaven.com"
 	}
+	maven {
+		url = "http://maven.kyrptonaught.dev"
+		allowInsecureProtocol = true
+	}
 }
 
 dependencies {
@@ -38,7 +42,7 @@ dependencies {
 	modImplementation "curse.maven:betterend-413596:${project.betterend_version}"
 	modImplementation "curse.maven:actuallyadditions-508556:${project.actuallyadditions_version}"
 	modImplementation "curse.maven:enderite-399221:${project.enderite_version}"
-	modImplementation "curse.maven:easytools-375954:${project.easytools_version}"
+	modCompileOnly "curse.maven:easytools-375954:${project.easytools_version}"
 
 	modImplementation "curse.maven:bclib-495191:${project.bclib_version}"
 

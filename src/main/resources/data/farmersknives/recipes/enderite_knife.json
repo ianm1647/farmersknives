@@ -2,5 +2,13 @@
   "type": "minecraft:smithing",
   "base": {"item": "farmersdelight:netherite_knife"},
   "addition": {"item": "enderitemod:enderite_ingot"},
-  "result": {"item": "farmersknives:enderite_knife"}
+  "result": {"item": "farmersknives:enderite_knife"},
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "enderitemod"
+      ]
+    }
+  ]
 }

@@ -6,20 +6,17 @@ import com.ianm1647.farmersknives.item.NetherKnifeItem;
 import com.kwpugh.emerald_tools.init.ItemInit;
 import com.nhoryzon.mc.farmersdelight.FarmersDelightMod;
 import com.nhoryzon.mc.farmersdelight.item.KnifeItem;
-import com.nhoryzon.mc.farmersdelight.tag.Tags;
 import dqu.additionaladditions.material.GildedNetheriteToolMaterial;
 import dqu.additionaladditions.material.RoseGoldToolMaterial;
 import net.enderitemc.enderitemod.materials.EnderiteMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import paulevs.betternether.items.materials.BNToolMaterial;
-import ru.bclib.api.tag.TagAPI;
 import ru.betterend.item.material.EndToolMaterial;
 
 public class ModRegistry {
@@ -27,7 +24,6 @@ public class ModRegistry {
 
     public static void registerThis() {
         registerItems();
-        registerTags();
     }
 
     public static void registerItems() {
@@ -70,31 +66,6 @@ public class ModRegistry {
         }
     }
 
-    public static void registerTags() {
-        if(FabricLoader.getInstance().isModLoaded("additionaladditions")) {
-            tag(ItemList.ROSE_GOLD_KNIFE);
-            tag(ItemList.GILDED_NETHERITE_KNIFE);
-        }
-        if(FabricLoader.getInstance().isModLoaded("betterend")) {
-            tag(ItemList.AETERNIUM_KNIFE);
-            tag(ItemList.THALLASIUM_KNIFE);
-            tag(ItemList.TERMINITE_KNIFE);
-        }
-        if(FabricLoader.getInstance().isModLoaded("betterend")) {
-            tag(ItemList.CINCINNASITE_KNIFE);
-            tag(ItemList.CINCINNASITE_DIAMOND_KNIFE);
-            tag(ItemList.NETHER_RUBY_KNIFE);
-        }
-        if(FabricLoader.getInstance().isModLoaded("emerald_tools")) {
-            tag(ItemList.EMERALD_KNIFE);
-            tag(ItemList.RUBY_KNIFE);
-            tag(ItemList.AMETHYST_KNIFE);
-            tag(ItemList.STEEL_KNIFE);
-            tag(ItemList.OBSIDIAN_KNIFE);
-            tag(ItemList.COPPER_KNIFE);
-        }
-    }
-
     private static Item knife(String name, ToolMaterial material, Item.Settings settings) {
         return Registry.register(Registry.ITEM, new Identifier(FarmersKnives.MODID, name),
                 new KnifeItem(material, settings));
@@ -103,9 +74,5 @@ public class ModRegistry {
     private static Item netherKnife(String name, ToolMaterial material) {
         return Registry.register(Registry.ITEM, new Identifier(FarmersKnives.MODID, name),
                 new NetherKnifeItem(material, new FabricItemSettings().group(group)));
-    }
-
-    private static void tag(ItemConvertible item) {
-        TagAPI.addItemTag(Tags.KNIVES, item);
     }
 }

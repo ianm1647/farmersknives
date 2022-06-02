@@ -1,0 +1,61 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersknives:rose_gold_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:gilded_netherite_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:aeternium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:thallasium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:terminite_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:cincinnasite_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:cincinnasite_knife_diamond",
+      "required": false
+    },
+    {
+      "id": "farmersknives:enderite_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:emerald_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:ruby_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:amethyst_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:steel_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:obsidian_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:copper_knife",
+      "required": false
+    }
+  ]
+}

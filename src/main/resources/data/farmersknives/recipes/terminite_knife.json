@@ -14,5 +14,13 @@
   },
   "result": {
     "item": "farmersknives:terminite_knife"
-  }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "betternether"
+      ]
+    }
+  ]
 }

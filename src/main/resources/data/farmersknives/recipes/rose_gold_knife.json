@@ -2,5 +2,13 @@
   "type": "minecraft:smithing",
   "base": {"item": "farmersdelight:golden_knife"},
   "addition": {"item": "minecraft:copper_ingot"},
-  "result": {"item": "farmersknives:rose_gold_knife"}
+  "result": {"item": "farmersknives:rose_gold_knife"},
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "emerald_tools"
+      ]
+    }
+  ]
 }

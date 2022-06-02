@@ -14,5 +14,13 @@
   },
   "result": {
     "item": "farmersknives:cincinnasite_knife_diamond"
-  }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "betternether"
+      ]
+    }
+  ]
 }
