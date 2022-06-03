@@ -19,8 +19,16 @@
   "item.farmersknives.obsidian_knife": "Obsidian Knife",
   "item.farmersknives.copper_knife": "Copper Knife",
 
+  "item.farmersknives.dragon_knife": "Dragon Knife",
+
+  "item.farmersknives.gobber_knife": "Gobber Knife",
+  "item.farmersknives.nether_gobber_knife": "Nether Knife",
+  "item.farmersknives.end_gobber_knife": "End Knife",
+
   "item.farmersknives.ironwood_knife": "Ironwood Knife",
   "item.farmersknives.fiery_knife": "Fiery Knife",
   "item.farmersknives.steeleaf_knife": "Steeleaf Knife",
-  "item.farmersknives.knightmetal_knife": "Knightmetal Knife"
+  "item.farmersknives.knightmetal_knife": "Knightmetal Knife",
+
+  "item.farmersknives.pendorite_knife": "Pendorite Knife"
 }

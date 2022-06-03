@@ -32,23 +32,30 @@ public class TwilightKnifeItem extends KnifeItem {
         super(material, settings);
     }
 
+    @Override
     public void appendStacks(ItemGroup group, DefaultedList<ItemStack> list) {
-        if (this.isIn(group)) {
-            if (this == ItemList.IRONWOOD_KNIFE) {
+        if (this == ItemList.IRONWOOD_KNIFE) {
+            if (this.isIn(group)) {
                 ItemStack stack = new ItemStack(this);
                 stack.addEnchantment(Enchantments.KNOCKBACK, 1);
                 list.add(stack);
             }
-            if (this == ItemList.STEELEAF_KNIFE) {
+        }
+        if (this == ItemList.STEELEAF_KNIFE) {
+            if (this.isIn(group)) {
                 ItemStack stack = new ItemStack(this);
                 stack.addEnchantment(Enchantments.LOOTING, 2);
                 list.add(stack);
             }
-            if (this == ItemList.FIERY_KNIFE) {
+        }
+        if (this == ItemList.FIERY_KNIFE) {
+            if (this.isIn(group)) {
                 ItemStack stack = new ItemStack(this);
                 list.add(stack);
             }
-            if (this == ItemList.KNIGHTMETAL_KNIFE) {
+        }
+        if (this == ItemList.KNIGHTMETAL_KNIFE) {
+            if (this.isIn(group)) {
                 ItemStack stack = new ItemStack(this);
                 list.add(stack);
             }
