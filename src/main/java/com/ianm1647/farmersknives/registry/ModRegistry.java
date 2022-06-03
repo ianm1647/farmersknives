@@ -2,6 +2,7 @@ package com.ianm1647.farmersknives.registry;
 
 import com.ianm1647.farmersknives.FarmersKnives;
 import com.ianm1647.farmersknives.item.ItemList;
+import com.ianm1647.farmersknives.item.TwilightKnifeItem;
 import com.ianm1647.farmersknives.item.NetherKnifeItem;
 import com.kwpugh.emerald_tools.init.ItemInit;
 import com.nhoryzon.mc.farmersdelight.FarmersDelightMod;
@@ -18,6 +19,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import paulevs.betternether.items.materials.BNToolMaterial;
 import ru.betterend.item.material.EndToolMaterial;
+import twilightforest.util.TwilightItemTier;
 
 public class ModRegistry {
     private static final ItemGroup group = FarmersDelightMod.ITEM_GROUP;
@@ -64,6 +66,15 @@ public class ModRegistry {
             ItemList.COPPER_KNIFE = knife("copper_knife", ItemInit.COPPER_TOOL_MATERIAL,
                     new FabricItemSettings().group(group));
         }
+        if(FabricLoader.getInstance().isModLoaded("gobber2")) {
+
+        }
+        if(FabricLoader.getInstance().isModLoaded("twilightforest")) {
+            ItemList.IRONWOOD_KNIFE = twilightKnife("ironwood_knife", TwilightItemTier.IRONWOOD);
+            ItemList.FIERY_KNIFE = twilightKnife("fiery_knife", TwilightItemTier.FIERY);
+            ItemList.STEELEAF_KNIFE = twilightKnife("steeleaf_knife", TwilightItemTier.STEELEAF);
+            ItemList.KNIGHTMETAL_KNIFE = twilightKnife("knightmetal_knife", TwilightItemTier.KNIGHTMETAL);
+        }
     }
 
     private static Item knife(String name, ToolMaterial material, Item.Settings settings) {
@@ -74,5 +85,10 @@ public class ModRegistry {
     private static Item netherKnife(String name, ToolMaterial material) {
         return Registry.register(Registry.ITEM, new Identifier(FarmersKnives.MODID, name),
                 new NetherKnifeItem(material, new FabricItemSettings().group(group)));
+    }
+
+    private static Item twilightKnife(String name, ToolMaterial material) {
+        return Registry.register(Registry.ITEM, new Identifier(FarmersKnives.MODID, name),
+                new TwilightKnifeItem(material, new FabricItemSettings().group(group)));
     }
 }

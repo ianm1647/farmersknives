@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "farmersknives:item/bone_knife"
+    "layer0": "farmersknives:item/knightmetal_knife"
   }
 }

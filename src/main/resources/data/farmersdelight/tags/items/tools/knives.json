@@ -56,6 +56,22 @@
     {
       "id": "farmersknives:copper_knife",
       "required": false
+    },
+    {
+      "id": "farmersknives:ironwood_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:fiery_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:steeleaf_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:knightmetal_knife",
+      "required": false
     }
   ]
 }

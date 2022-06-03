@@ -23,4 +23,14 @@ public class ItemList {
     public static Item STEEL_KNIFE;
     public static Item OBSIDIAN_KNIFE;
     public static Item COPPER_KNIFE;
+
+    public static Item GOBBER_KNIFE;
+    public static Item NETHER_GOBBER_KNIFE;
+    public static Item END_GOBBER_KNIFE;
+
+    public static Item IRONWOOD_KNIFE;
+    public static Item FIERY_KNIFE;
+    public static Item STEELEAF_KNIFE;
+    public static Item KNIGHTMETAL_KNIFE;
+
 }

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m",
+    "s "
+  ],
+  "key": {
+    "m": {
+      "tag": "c:ingots/ironwood"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:knockback\"}]}",
+    "item": "farmersknives:ironwood_knife",
+    "type": "minecraft:item_nbt"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "twilightforest"
+      ]
+    }
+  ]
+}

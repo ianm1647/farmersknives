@@ -16,16 +16,12 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
-	maven {
-		url "https://maven.shedaniel.me/"
-	}
-	maven { //CurseForge
-		url "https://www.cursemaven.com"
-	}
-	maven {
-		url = "http://maven.kyrptonaught.dev"
-		allowInsecureProtocol = true
-	}
+	maven { url "https://maven.shedaniel.me/" }
+	maven { url "https://www.cursemaven.com" }
+	maven { url = "https://maven.wispforest.io/" }
+	maven { url = "https://jitpack.io" }
+	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" }
+	maven { url = "https://maven.terraformersmc.com/" }
 }
 
 dependencies {
@@ -38,13 +34,18 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	modImplementation "curse.maven:farmersdelightfabric-482834:${project.delight_version}"
-	modImplementation "curse.maven:betternether-311377:${project.betternether_version}"
-	modImplementation "curse.maven:betterend-413596:${project.betterend_version}"
-	modImplementation "curse.maven:actuallyadditions-508556:${project.actuallyadditions_version}"
-	modImplementation "curse.maven:enderite-399221:${project.enderite_version}"
-	modCompileOnly "curse.maven:easytools-375954:${project.easytools_version}"
 
-	modImplementation "curse.maven:bclib-495191:${project.bclib_version}"
+	modCompileOnly "curse.maven:betternether-311377:${project.betternether_version}"
+	modCompileOnly "curse.maven:betterend-413596:${project.betterend_version}"
+	modCompileOnly "curse.maven:actuallyadditions-508556:${project.actuallyadditions_version}"
+	modCompileOnly "curse.maven:enderite-399221:${project.enderite_version}"
+	modImplementation "curse.maven:dragonloot-424480:${project.dragonloot_version}"
+	modCompileOnly "curse.maven:twilightforest-227639:${project.twilightforest_version}"
+	modCompileOnly "curse.maven:byg-391378:${project.byg_version}"
+	modCompileOnly "curse.maven:easytools-375954:${project.easytools_version}"
+	modCompileOnly "curse.maven:gobber-427177:${project.gobber_version}"
+
+	modApi "com.terraformersmc:modmenu:${project.modmenu_version}"
 
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}"
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}"
