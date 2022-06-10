@@ -6,9 +6,9 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
-import paulevs.betternether.interfaces.InitialStackStateProvider;
-import paulevs.betternether.items.materials.BNToolMaterial;
-import paulevs.betternether.registry.NetherEnchantments;
+import org.betterx.betternether.interfaces.InitialStackStateProvider;
+import org.betterx.betternether.items.materials.BNToolMaterial;
+import org.betterx.betternether.registry.NetherEnchantments;
 
 import java.util.HashMap;
 import java.util.Map;

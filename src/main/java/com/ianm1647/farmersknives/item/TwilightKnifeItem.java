@@ -16,7 +16,6 @@ import net.minecraft.network.packet.s2c.play.EntityAnimationS2CPacket;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
@@ -135,10 +134,10 @@ public class TwilightKnifeItem extends KnifeItem {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         if (this == ItemList.FIERY_KNIFE) {
-            tooltip.add(new TranslatableText("item.twilightforest.fiery_sword.tooltip").formatted(Formatting.GRAY));
+            tooltip.add(Text.translatable("item.twilightforest.fiery_sword.tooltip").formatted(Formatting.GRAY));
         }
         if (this == ItemList.KNIGHTMETAL_KNIFE) {
-            tooltip.add(new TranslatableText("item.twilightforest.knightmetal_sword.tooltip").formatted(Formatting.GRAY));
+            tooltip.add(Text.translatable("item.twilightforest.knightmetal_sword.tooltip").formatted(Formatting.GRAY));
         }
     }
 }
