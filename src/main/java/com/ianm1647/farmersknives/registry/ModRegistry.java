@@ -41,8 +41,12 @@ public class ModRegistry {
             ItemList.CINCINNASITE_DIAMOND_KNIFE = netherKnife("cincinnasite_knife_diamond", ToolMaterials.CINCINNASITE_DIAMOND);
             ItemList.NETHER_RUBY_KNIFE = netherKnife("nether_ruby_knife", ToolMaterials.NETHER_RUBY);
         }
-        if (FabricLoader.getInstance().isModLoaded("enderitemod")) {
-            ItemList.ENDERITE_KNIFE = knife("enderite_knife", ToolMaterials.ENDERITE,
+        if (FabricLoader.getInstance().isModLoaded("byg")) {
+            ItemList.PENDORITE_KNIFE = knife("pendorite_knife", ToolMaterials.PENDORITE,
+                    new FabricItemSettings().group(group));
+        }
+        if (FabricLoader.getInstance().isModLoaded("dragonloot")) {
+            ItemList.DRAGON_KNIFE = knife("dragon_knife", ToolMaterials.DRAGON,
                     new FabricItemSettings().group(group).fireproof());
         }
         if (FabricLoader.getInstance().isModLoaded("emerald_tools")) {
@@ -52,15 +56,17 @@ public class ModRegistry {
                     new FabricItemSettings().group(group));
             ItemList.AMETHYST_KNIFE = knife("amethyst_knife", ToolMaterials.AMETHYST,
                     new FabricItemSettings().group(group));
-            ItemList.STEEL_KNIFE = knife("steel_knife", ToolMaterials.STEEL,
-                    new FabricItemSettings().group(group));
             ItemList.OBSIDIAN_KNIFE = knife("obsidian_knife", ToolMaterials.OBSIDIAN,
                     new FabricItemSettings().group(group));
-            ItemList.COPPER_KNIFE = knife("copper_knife_et", ToolMaterials.COPPER_ET,
-                    new FabricItemSettings().group(group));
+            if (!FabricLoader.getInstance().isModLoaded("mythic_metals")) {
+                ItemList.STEEL_KNIFE = knife("steel_knife_et", ToolMaterials.STEEL,
+                        new FabricItemSettings().group(group));
+                ItemList.COPPER_KNIFE = knife("copper_knife_et", ToolMaterials.COPPER_ET,
+                        new FabricItemSettings().group(group));
+            }
         }
-        if (FabricLoader.getInstance().isModLoaded("dragonloot")) {
-            ItemList.DRAGON_KNIFE = knife("dragon_knife", ToolMaterials.DRAGON,
+        if (FabricLoader.getInstance().isModLoaded("enderitemod")) {
+            ItemList.ENDERITE_KNIFE = knife("enderite_knife", ToolMaterials.ENDERITE,
                     new FabricItemSettings().group(group).fireproof());
         }
         if (FabricLoader.getInstance().isModLoaded("gobber2")) {
@@ -71,6 +77,9 @@ public class ModRegistry {
             ItemList.END_GOBBER_KNIFE = knife("end_gobber_knife", ToolMaterials.GOBBER_END,
                     new FabricItemSettings().group(group).fireproof());
         }
+        if (FabricLoader.getInstance().isModLoaded("mythicmetals")) {
+
+        }
         if (FabricLoader.getInstance().isModLoaded("twilightforest")) {
             ItemList.IRONWOOD_KNIFE = twilightKnife("ironwood_knife", ToolMaterials.IRONWOOD,
                     new FabricItemSettings().group(group));
@@ -79,10 +88,6 @@ public class ModRegistry {
             ItemList.STEELEAF_KNIFE = twilightKnife("steeleaf_knife", ToolMaterials.STEELEAF,
                     new FabricItemSettings().group(group));
             ItemList.KNIGHTMETAL_KNIFE = twilightKnife("knightmetal_knife", ToolMaterials.KNIGHTMETAL,
-                    new FabricItemSettings().group(group));
-        }
-        if (FabricLoader.getInstance().isModLoaded("byg")) {
-            ItemList.PENDORITE_KNIFE = knife("pendorite_knife", ToolMaterials.PENDORITE,
                     new FabricItemSettings().group(group));
         }
     }
