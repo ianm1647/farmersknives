@@ -1,10 +1,7 @@
 package com.ianm1647.farmersknives.registry;
 
 import com.ianm1647.farmersknives.FarmersKnives;
-import com.ianm1647.farmersknives.item.ItemList;
-import com.ianm1647.farmersknives.item.ToolMaterials;
-import com.ianm1647.farmersknives.item.TwilightKnifeItem;
-import com.ianm1647.farmersknives.item.NetherKnifeItem;
+import com.ianm1647.farmersknives.item.*;
 import com.nhoryzon.mc.farmersdelight.item.KnifeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.loader.api.FabricLoader;
@@ -59,7 +56,7 @@ public class ModRegistry {
             ItemList.OBSIDIAN_KNIFE = knife("obsidian_knife", ToolMaterials.OBSIDIAN,
                     new FabricItemSettings().group(group));
             if (!FabricLoader.getInstance().isModLoaded("mythic_metals")) {
-                ItemList.STEEL_KNIFE = knife("steel_knife_et", ToolMaterials.STEEL,
+                ItemList.STEEL_KNIFE = knife("steel_knife_et", ToolMaterials.STEEL_ET,
                         new FabricItemSettings().group(group));
                 ItemList.COPPER_KNIFE = knife("copper_knife_et", ToolMaterials.COPPER_ET,
                         new FabricItemSettings().group(group));
@@ -78,7 +75,50 @@ public class ModRegistry {
                     new FabricItemSettings().group(group).fireproof());
         }
         if (FabricLoader.getInstance().isModLoaded("mythicmetals")) {
-
+            ItemList.ADAMANTITE_KNIFE = knife("adamantite_knife", ToolMaterials.ADAMANTITE,
+                    new FabricItemSettings().group(group));
+            ItemList.AQUARIUM_KNIFE = knife("aquarium_knife", ToolMaterials.AQUARIUM,
+                    new FabricItemSettings().group(group));
+            ItemList.BANGLUM_KNIFE = knife("banglum_knife", ToolMaterials.BANGLUM,
+                    new FabricItemSettings().group(group));
+            ItemList.BRONZE_KNIFE = knife("bronze_knife", ToolMaterials.BRONZE,
+                    new FabricItemSettings().group(group));
+            ItemList.CARMOT_KNIFE = knife("carmot_knife", ToolMaterials.CARMOT,
+                    new FabricItemSettings().group(group));
+            ItemList.CELESTIUM_KNIFE = knife("celestium_knife", ToolMaterials.CELESTIUM,
+                    new FabricItemSettings().group(group));
+            ItemList.COPPER_KNIFE = knife("copper_knife_mm", ToolMaterials.COPPER_MM,
+                    new FabricItemSettings().group(group));
+            ItemList.DURASTEEL_KNIFE = knife("durasteel_knife", ToolMaterials.DURASTEEL,
+                    new FabricItemSettings().group(group));
+            ItemList.HALLOWED_KNIFE = knife("hallowed_knife", ToolMaterials.HALLOWED,
+                    new FabricItemSettings().group(group));
+            ItemList.KYBER_KNIFE = knife("kyber_knife", ToolMaterials.KYBER,
+                    new FabricItemSettings().group(group));
+            ItemList.LEGENDARY_BANGLUM_KNIFE = knife("legendary_banglum_knife", ToolMaterials.LEGENDARY_BANGLUM,
+                    new FabricItemSettings().group(group));
+            ItemList.METALLURGIUM_KNIFE = knife("metallurgium_knife", ToolMaterials.METALLURGIUM,
+                    new FabricItemSettings().group(group));
+            ItemList.MYTHRIL_KNIFE = knife("mythril_knife", ToolMaterials.MYTHRIL,
+                    new FabricItemSettings().group(group));
+            ItemList.ORICHALCUM_KNIFE = knife("orichalcum_knife", ToolMaterials.ORICHALCUM,
+                    new FabricItemSettings().group(group));
+            ItemList.OSMIUM_KNIFE = knife("osmium_knife", ToolMaterials.OSMIUM,
+                    new FabricItemSettings().group(group));
+            ItemList.PALLADIUM_KNIFE = knife("palladium_knife", ToolMaterials.PALLADIUM,
+                    new FabricItemSettings().group(group).fireproof());
+            ItemList.PROMETHEUM_KNIFE = knife("prometheum_knife", ToolMaterials.PROMETHEUM,
+                    new FabricItemSettings().group(group));
+            ItemList.QUADRILLUM_KNIFE = knife("quadrillum_knife", ToolMaterials.QUADRILLUM,
+                    new FabricItemSettings().group(group));
+            ItemList.RUNITE_KNIFE = knife("runite_knife", ToolMaterials.RUNITE,
+                    new FabricItemSettings().group(group));
+            ItemList.STAR_PLATINUM_KNIFE = knife("star_platinum_knife", ToolMaterials.STAR_PLATINUM,
+                    new FabricItemSettings().group(group));
+            ItemList.STEEL_KNIFE = knife("steel_knife_mm", ToolMaterials.STEEL_MM,
+                    new FabricItemSettings().group(group));
+            ItemList.STORMYX_KNIFE = knife("stormyx_knife", ToolMaterials.STORMYX,
+                    new FabricItemSettings().group(group));
         }
         if (FabricLoader.getInstance().isModLoaded("twilightforest")) {
             ItemList.IRONWOOD_KNIFE = twilightKnife("ironwood_knife", ToolMaterials.IRONWOOD,
@@ -92,14 +132,14 @@ public class ModRegistry {
         }
     }
 
-    private static Item knife(String name, ToolMaterial material, Item.Settings settings) {
+    private static Item knife(String name, ToolMaterial material, FabricItemSettings settings) {
         return Registry.register(Registry.ITEM, new Identifier(FarmersKnives.MODID, name),
-                new KnifeItem(material, settings));
+                new CustomKnifeItem(material, settings));
     }
 
     private static Item netherKnife(String name, ToolMaterial material) {
         return Registry.register(Registry.ITEM, new Identifier(FarmersKnives.MODID, name),
-                new NetherKnifeItem(material, new FabricItemSettings().group(group)));
+                new NetherKnifeItem(material, new FabricItemSettings().group(group).fireproof()));
     }
 
     private static Item twilightKnife(String name, ToolMaterial material, Item.Settings settings) {

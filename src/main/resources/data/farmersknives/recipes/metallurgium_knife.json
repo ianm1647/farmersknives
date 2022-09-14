@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing",
+  "base": {"item": "farmersdelight:netherite_knife"},
+  "addition": {"item": "mythicmetals:metallurgium_ingot"},
+  "result": {"item": "farmersknives:metallurgium_knife"},
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "mythicmetals"
+      ]
+    }
+  ]
+}

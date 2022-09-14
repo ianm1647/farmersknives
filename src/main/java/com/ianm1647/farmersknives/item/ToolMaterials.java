@@ -47,7 +47,7 @@ public enum ToolMaterials implements ToolMaterial {
             () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("emerald_tools", "ruby")))),
     AMETHYST(3, 840, 8.0F, 1.5F, 25,
             () -> Ingredient.ofItems(Items.AMETHYST_SHARD)),
-    STEEL(3, 512, 7.0F, 2.0F, 9,
+    STEEL_ET(3, 512, 7.0F, 2.0F, 9,
             () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("emerald_tools", "steel_ingot")))),
     OBSIDIAN(3, 650, 5.5F, 1.5F, 4,
             () -> Ingredient.ofItems(Items.OBSIDIAN)),
@@ -107,6 +107,8 @@ public enum ToolMaterials implements ToolMaterial {
                    () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("mythicmetals", "runite_ingot")))),
     STAR_PLATINUM(3, 1300, 9.0F, 4.0F, 18,
                           () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("mythicmetals", "star_platinum")))),
+    STEEL_MM(2, 600, 6.5F, 2.5F, 12,
+            () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("mythicmetals", "steel_ingot")))),
     STORMYX(3, 1305, 8.0F, 3.5F, 20,
                     () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("mythicmetals", "stormyx_ingot")))),
 
