@@ -6,20 +6,20 @@
   ],
   "key": {
     "m": {
-      "tag": "c:steel_ingots"
+      "item": "mythicmetals:runite_ingot"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "farmersknives:steel_knife"
+    "item": "farmersknives:runite_knife"
   },
   "fabric:load_conditions": [
     {
       "condition": "fabric:any_mod_loaded",
       "values": [
-        "emerald_tools"
+        "mythicmetals"
       ]
     }
   ]

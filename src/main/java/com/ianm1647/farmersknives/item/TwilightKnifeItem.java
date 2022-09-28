@@ -29,7 +29,7 @@ import java.util.List;
 
 public class TwilightKnifeItem extends KnifeItem {
     public TwilightKnifeItem(ToolMaterial material, Settings settings) {
-        super(material, settings);
+        super(material);
     }
 
     @Override

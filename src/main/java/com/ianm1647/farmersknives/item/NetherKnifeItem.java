@@ -17,7 +17,7 @@ public class NetherKnifeItem extends KnifeItem implements InitialStackStateProvi
     static final Map<Enchantment, Integer> DEFAULT_RUBY_ENCHANTS = new HashMap();
 
     public NetherKnifeItem(ToolMaterial material, Settings settings) {
-        super(material, settings.fireproof());
+        super(material);
     }
 
     public float getMiningSpeedMultiplier(ItemStack stack, BlockState state) {

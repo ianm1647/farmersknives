@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing",
+  "base": {"item": "farmersdelight:diamond_knife"},
+  "addition": {"item": "mythicmetals:celestium_ingot"},
+  "result": {"item": "farmersknives:celestium_knife"},
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "mythicmetals"
+      ]
+    }
+  ]
+}

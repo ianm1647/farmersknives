@@ -36,14 +36,6 @@ dependencies {
 	modImplementation "curse.maven:farmersdelightfabric-482834:${project.delight_version}"
 
 	modCompileOnly "curse.maven:betternether-311377:${project.betternether_version}"
-	modCompileOnly "curse.maven:betterend-413596:${project.betterend_version}"
-	modCompileOnly "curse.maven:actuallyadditions-508556:${project.actuallyadditions_version}"
-	modCompileOnly "curse.maven:enderite-399221:${project.enderite_version}"
-	modImplementation "curse.maven:dragonloot-424480:${project.dragonloot_version}"
-	modCompileOnly "curse.maven:twilightforest-227639:${project.twilightforest_version}"
-	modCompileOnly "curse.maven:byg-391378:${project.byg_version}"
-	modCompileOnly "curse.maven:easytools-375954:${project.easytools_version}"
-	modCompileOnly "curse.maven:gobber-427177:${project.gobber_version}"
 
 	modApi "com.terraformersmc:modmenu:${project.modmenu_version}"
 

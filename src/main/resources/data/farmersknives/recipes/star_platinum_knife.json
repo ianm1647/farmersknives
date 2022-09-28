@@ -6,20 +6,20 @@
   ],
   "key": {
     "m": {
-      "item": "minecraft:copper_ingot"
+      "item": "mythicmetals:star_platinum_ingot"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "farmersknives:copper_knife"
+    "item": "farmersknives:star_platinum_knife"
   },
   "fabric:load_conditions": [
     {
       "condition": "fabric:any_mod_loaded",
       "values": [
-        "emerald_tools"
+        "mythicmetals"
       ]
     }
   ]
