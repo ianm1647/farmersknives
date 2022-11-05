@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smithing",
   "base": {"item": "farmersdelight:iron_knife"},
-  "addition": {"item": "additionaladditions:rose_gold_alloy"},
-  "result": {"item": "farmersknives:rose_gold_knife"},
+  "addition": {"item": "winterly:cryomarble"},
+  "result": {"item": "farmersknives:cryomarble_knife"},
   "fabric:load_conditions": [
     {
       "condition": "fabric:any_mod_loaded",
       "values": [
-        "additionaladditions"
+        "winterly"
       ]
     }
   ]

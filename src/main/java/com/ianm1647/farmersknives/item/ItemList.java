@@ -11,6 +11,11 @@ public class ItemList {
     public static Item ROSE_GOLD_KNIFE;
     public static Item GILDED_NETHERITE_KNIFE;
 
+    public static Item NETHERITE_IRON_KNIFE;
+    public static Item NETHERITE_GOLD_KNIFE;
+    public static Item NETHERITE_EMERALD_KNIFE;
+    public static Item NETHERITE_DIAMOND_KNIFE;
+
     public static Item AETERNIUM_KNIFE;
     public static Item THALLASIUM_KNIFE;
     public static Item TERMINITE_KNIFE;
@@ -61,5 +66,7 @@ public class ItemList {
     public static Item FIERY_KNIFE;
     public static Item STEELEAF_KNIFE;
     public static Item KNIGHTMETAL_KNIFE;
+
+    public static Item CRYOMARBLE_KNIFE;
 
 }

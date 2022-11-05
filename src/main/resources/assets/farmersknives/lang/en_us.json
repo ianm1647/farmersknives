@@ -7,6 +7,11 @@
   "item.farmersknives.rose_gold_knife": "Rose Gold Knife",
   "item.farmersknives.gilded_netherite_knife": "Gilded Netherite Knife",
 
+  "item.farmersknives.netherite_iron_knife": "Netherite-Iron Knife",
+  "item.farmersknives.netherite_gold_knife": "Netherite-Gold Knife",
+  "item.farmersknives.netherite_emerald_knife": "Netherite-Emerald Knife",
+  "item.farmersknives.netherite_diamond_knife": "Netherite-Diamond Knife",
+
   "item.farmersknives.aeternium_knife": "Aeternium Knife",
   "item.farmersknives.thallasium_knife": "Thallasium Knife",
   "item.farmersknives.terminite_knife": "Terminite Knife",
@@ -58,5 +63,7 @@
   "item.farmersknives.steeleaf_knife": "Steeleaf Knife",
   "item.farmersknives.knightmetal_knife": "Knightmetal Knife",
 
-  "item.farmersknives.pendorite_knife": "Pendorite Knife"
+  "item.farmersknives.pendorite_knife": "Pendorite Knife",
+
+  "item.farmersknives.cryomarble_knife": "Cryomarble Knife"
 }

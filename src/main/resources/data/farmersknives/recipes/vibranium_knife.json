@@ -6,10 +6,10 @@
   ],
   "key": {
     "m": {
-      "item": "adamantiummod:vibranium_ingot"
+      "item": "adabraniummod:vibranium_ingot"
     },
     "s": {
-      "item": "adamantiummod:obsidian_rod"
+      "item": "adabraniummod:obsidian_rod"
     }
   },
   "result": {
@@ -19,7 +19,7 @@
     {
       "condition": "fabric:any_mod_loaded",
       "values": [
-        "adamantiummod"
+        "adabraniummod"
       ]
     }
   ]

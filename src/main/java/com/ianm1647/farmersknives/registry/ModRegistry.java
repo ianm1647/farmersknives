@@ -2,6 +2,7 @@ package com.ianm1647.farmersknives.registry;
 
 import com.ianm1647.farmersknives.FarmersKnives;
 import com.ianm1647.farmersknives.item.*;
+import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.Item;
@@ -30,6 +31,16 @@ public class ModRegistry {
             ItemList.ROSE_GOLD_KNIFE = knife("rose_gold_knife", ToolMaterials.ROSE_GOLD,
                     new FabricItemSettings().group(group));
             ItemList.GILDED_NETHERITE_KNIFE = knife("gilded_netherite_knife", ToolMaterials.GILDED_NETHERITE,
+                    new FabricItemSettings().group(group).fireproof());
+        }
+        if (FabricLoader.getInstance().isModLoaded("advancednetherite")) {
+            ItemList.NETHERITE_IRON_KNIFE = knife("netherite_iron_knife", ToolMaterials.NETHERITE_IRON,
+                    new FabricItemSettings().group(group).fireproof());
+            ItemList.NETHERITE_GOLD_KNIFE = knife("netherite_gold_knife", ToolMaterials.NETHERITE_GOLD,
+                    new FabricItemSettings().group(group).fireproof());
+            ItemList.NETHERITE_EMERALD_KNIFE = knife("netherite_emerald_knife", ToolMaterials.NETHERITE_EMERALD,
+                    new FabricItemSettings().group(group).fireproof());
+            ItemList.NETHERITE_DIAMOND_KNIFE = knife("netherite_diamond_knife", ToolMaterials.NETHERITE_DIAMOND,
                     new FabricItemSettings().group(group).fireproof());
         }
         if (FabricLoader.getInstance().isModLoaded("betterend")) {
@@ -135,6 +146,10 @@ public class ModRegistry {
             ItemList.STEELEAF_KNIFE = twilightKnife("steeleaf_knife", ToolMaterials.STEELEAF,
                     new FabricItemSettings().group(group));
             ItemList.KNIGHTMETAL_KNIFE = twilightKnife("knightmetal_knife", ToolMaterials.KNIGHTMETAL,
+                    new FabricItemSettings().group(group));
+        }
+        if (FabricLoader.getInstance().isModLoaded("winterly")) {
+            ItemList.CRYOMARBLE_KNIFE = knife("cryomarble_knife", net.minecraft.item.ToolMaterials.DIAMOND,
                     new FabricItemSettings().group(group));
         }
     }

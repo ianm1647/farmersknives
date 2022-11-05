@@ -24,6 +24,16 @@ public enum ToolMaterials implements ToolMaterial {
     GILDED_NETHERITE(4, 2000, 9.0F, 2.0F, 24,
             () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
 
+    //advanced netherite
+    NETHERITE_IRON(4, 2281, 12.0F, 4.0F, 15,
+            () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("advancednetherite", "netherite_iron_ingot")))),
+    NETHERITE_GOLD(4, 2313, 20.0F, 4.0F, 25,
+            () -> Registry.ITEM.get(new Identifier("advancednetherite", "netherite_gold_ingot"))),
+    NETHERITE_EMERALD(4, 2651, 29.0F, 5.0F, 20,
+            () -> Registry.ITEM.get(new Identifier("advancednetherite", "netherite_emerald_ingot"))),
+    NETHERITE_DIAMOND(4, 3092, 39.0F, 5.0F, 15,
+            () -> Registry.ITEM.get(new Identifier("advancednetherite", "netherite_diamond_ingot"))),
+
     //betterend
     THALLASIUM(2, 320, 7.0F, 1.5F, 12,
             () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("betterend", "thallasium_ingot")))),

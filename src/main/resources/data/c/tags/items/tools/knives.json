@@ -22,6 +22,22 @@
       "required": false
     },
     {
+      "id": "farmersknives:netherite_iron_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:netherite_gold_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:netherite_emerald_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:netherite_diamond_knife",
+      "required": false
+    },
+    {
       "id": "farmersknives:aeternium_knife",
       "required": false
     },
@@ -191,6 +207,10 @@
     },
     {
       "id": "farmersknives:steel_knife_mm",
+      "required": false
+    },
+    {
+      "id": "farmersknives:cryomarble_knife",
       "required": false
     }
   ]
