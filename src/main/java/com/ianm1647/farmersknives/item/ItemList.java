@@ -4,6 +4,10 @@ import net.minecraft.item.Item;
 
 public class ItemList {
 
+    public static Item VIBRANIUM_KNIFE;
+    public static Item ADAMANTIUM_KNIFE;
+    public static Item NETHER_BRICK_KNIFE;
+
     public static Item ROSE_GOLD_KNIFE;
     public static Item GILDED_NETHERITE_KNIFE;
 

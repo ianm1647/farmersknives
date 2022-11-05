@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m",
+    "s "
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:nether_brick"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "farmersknives:nether_brick_knife"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "adabraniummod"
+      ]
+    }
+  ]
+}

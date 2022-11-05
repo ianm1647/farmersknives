@@ -2,6 +2,18 @@
   "replace": false,
   "values": [
     {
+      "id": "farmersknives:vibranium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:adamantium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:nether_brick_knife",
+      "required": false
+    },
+    {
       "id": "farmersknives:rose_gold_knife",
       "required": false
     },

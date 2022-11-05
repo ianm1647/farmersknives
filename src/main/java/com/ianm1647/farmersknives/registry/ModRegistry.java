@@ -2,7 +2,6 @@ package com.ianm1647.farmersknives.registry;
 
 import com.ianm1647.farmersknives.FarmersKnives;
 import com.ianm1647.farmersknives.item.*;
-import com.nhoryzon.mc.farmersdelight.item.KnifeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.Item;
@@ -19,6 +18,14 @@ public class ModRegistry {
     }
 
     public static void registerItems() {
+        if (FabricLoader.getInstance().isModLoaded("adabraniummod")) {
+            ItemList.VIBRANIUM_KNIFE = knife("vibranium_knife", ToolMaterials.VIBRANIUM,
+                    new FabricItemSettings().group(group));
+            ItemList.ADAMANTIUM_KNIFE = knife("adamantium_knife", ToolMaterials.ADAMANTIUM,
+                    new FabricItemSettings().group(group));
+            ItemList.NETHER_BRICK_KNIFE = knife("nether_brick_knife", ToolMaterials.NETHER_BRICK,
+                    new FabricItemSettings().group(group).fireproof());
+        }
         if (FabricLoader.getInstance().isModLoaded("additionaladditions")) {
             ItemList.ROSE_GOLD_KNIFE = knife("rose_gold_knife", ToolMaterials.ROSE_GOLD,
                     new FabricItemSettings().group(group));

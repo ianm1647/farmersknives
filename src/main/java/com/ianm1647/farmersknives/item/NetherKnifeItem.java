@@ -26,7 +26,7 @@ public class NetherKnifeItem extends KnifeItem implements InitialStackStateProvi
 
     @Override
     public void initializeState(ItemStack itemStack) {
-        if (this.getMaterial() == BNToolMaterial.NETHER_RUBY) {
+        if (this.getMaterial() == ToolMaterials.NETHER_RUBY) {
             EnchantmentHelper.set(DEFAULT_RUBY_ENCHANTS, itemStack);
         }
     }

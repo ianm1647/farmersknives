@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m",
+    "s "
+  ],
+  "key": {
+    "m": {
+      "item": "adamantiummod:vibranium_ingot"
+    },
+    "s": {
+      "item": "adamantiummod:obsidian_rod"
+    }
+  },
+  "result": {
+    "item": "farmersknives:vibranium_knife"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "adamantiummod"
+      ]
+    }
+  ]
+}
