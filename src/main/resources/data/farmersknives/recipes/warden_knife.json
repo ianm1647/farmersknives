@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing",
+  "base": {"item": "farmersdelight:netherite_knife"},
+  "addition": {"item": "deeperdarker:reinforced_echo_shard"},
+  "result": {"item": "farmersknives:warden_knife"},
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "deeperdarker"
+      ]
+    }
+  ]
+}

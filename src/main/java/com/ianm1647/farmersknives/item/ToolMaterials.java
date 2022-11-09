@@ -1,5 +1,6 @@
 package com.ianm1647.farmersknives.item;
 
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -28,11 +29,15 @@ public enum ToolMaterials implements ToolMaterial {
     NETHERITE_IRON(4, 2281, 12.0F, 4.0F, 15,
             () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("advancednetherite", "netherite_iron_ingot")))),
     NETHERITE_GOLD(4, 2313, 20.0F, 4.0F, 25,
-            () -> Registry.ITEM.get(new Identifier("advancednetherite", "netherite_gold_ingot"))),
+            () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("advancednetherite", "netherite_gold_ingot")))),
     NETHERITE_EMERALD(4, 2651, 29.0F, 5.0F, 20,
-            () -> Registry.ITEM.get(new Identifier("advancednetherite", "netherite_emerald_ingot"))),
+            () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("advancednetherite", "netherite_emerald_ingot")))),
     NETHERITE_DIAMOND(4, 3092, 39.0F, 5.0F, 15,
-            () -> Registry.ITEM.get(new Identifier("advancednetherite", "netherite_diamond_ingot"))),
+            () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("advancednetherite", "netherite_diamond_ingot")))),
+
+    //aphid additions
+    CHITIN(4, 1600, 8.0f, 4.0f, 20,
+            () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("mantori", "chitin_spike")))),
 
     //betterend
     THALLASIUM(2, 320, 7.0F, 1.5F, 12,
@@ -53,6 +58,14 @@ public enum ToolMaterials implements ToolMaterial {
     //byg
     PENDORITE(5, 2500, 10.0F, 4.0F, 15,
             () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("byg", "pendorite_ingot")))),
+
+    //conjuring
+    SOUL_ALLOY(4, 2500, 10.0F, 5.0F, 18,
+            () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("conjuring", "soul_alloy")))),
+
+    //deeper and darker
+    WARDEN(4, 2464, 11.0F, 7.0F, 21,
+            () -> Ingredient.ofItems(Registry.ITEM.get(new Identifier("deeperdarker", "reinforced_echo_shard")))),
 
     //dragon loot
     DRAGON(5, 67*37, 12.0F, 5.0F, 20,

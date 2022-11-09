@@ -7,16 +7,15 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 import org.betterx.betternether.interfaces.InitialStackStateProvider;
-import org.betterx.betternether.items.materials.BNToolMaterial;
 import org.betterx.betternether.registry.NetherEnchantments;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class NetherKnifeItem extends KnifeItem implements InitialStackStateProvider {
+public class EnchantKnifeItem extends KnifeItem implements InitialStackStateProvider {
     static final Map<Enchantment, Integer> DEFAULT_RUBY_ENCHANTS = new HashMap();
 
-    public NetherKnifeItem(ToolMaterial material, Settings settings) {
+    public EnchantKnifeItem(ToolMaterial material, Settings settings) {
         super(material);
     }
 

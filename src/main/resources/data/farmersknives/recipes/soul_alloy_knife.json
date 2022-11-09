@@ -1,0 +1,33 @@
+{
+  "type": "conjuring:soul_weaving",
+  "inputs": [
+    {
+      "item": "farmersdelight:netherite_knife"
+    },
+    {
+      "item": "conjuring:soul_slice"
+    },
+    {
+      "item": "conjuring:soul_alloy"
+    },
+    {
+      "item": "conjuring:soul_alloy"
+    },
+    {
+      "item": "conjuring:soul_alloy"
+    }
+  ],
+  "result": {
+    "item": "farmersknives:soul_alloy_knife",
+    "count": 1
+  },
+  "transferTag": true,
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "conjuring"
+      ]
+    }
+  ]
+}

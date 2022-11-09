@@ -12,6 +12,8 @@
   "item.farmersknives.netherite_emerald_knife": "Netherite-Emerald Knife",
   "item.farmersknives.netherite_diamond_knife": "Netherite-Diamond Knife",
 
+  "item.farmersknives.chitin_knife": "Chitin Knife",
+
   "item.farmersknives.aeternium_knife": "Aeternium Knife",
   "item.farmersknives.thallasium_knife": "Thallasium Knife",
   "item.farmersknives.terminite_knife": "Terminite Knife",
@@ -28,6 +30,10 @@
   "item.farmersknives.steel_knife_et": "Steel Knife",
   "item.farmersknives.obsidian_knife": "Obsidian Knife",
   "item.farmersknives.copper_knife_et": "Copper Knife",
+
+  "item.farmersknives.soul_alloy_knife": "Soul Alloy Knife",
+
+  "item.farmersknives.warden_knife": "Warden Knife",
 
   "item.farmersknives.dragon_knife": "Dragon Knife",
 

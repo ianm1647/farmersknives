@@ -43,6 +43,10 @@ public class ModRegistry {
             ItemList.NETHERITE_DIAMOND_KNIFE = knife("netherite_diamond_knife", ToolMaterials.NETHERITE_DIAMOND,
                     new FabricItemSettings().group(group).fireproof());
         }
+        if (FabricLoader.getInstance().isModLoaded("mantori")) {
+            ItemList.CHITIN_KNIFE = knife("chitin_knife", ToolMaterials.CHITIN,
+                    new FabricItemSettings().group(group));
+        }
         if (FabricLoader.getInstance().isModLoaded("betterend")) {
             ItemList.AETERNIUM_KNIFE = knife("aeternium_knife", ToolMaterials.AETERNIUM,
                     new FabricItemSettings().group(group).fireproof());
@@ -52,13 +56,24 @@ public class ModRegistry {
                     new FabricItemSettings().group(group));
         }
         if (FabricLoader.getInstance().isModLoaded("betternether")) {
-            ItemList.CINCINNASITE_KNIFE = netherKnife("cincinnasite_knife", ToolMaterials.CINCINNASITE);
-            ItemList.CINCINNASITE_DIAMOND_KNIFE = netherKnife("cincinnasite_knife_diamond", ToolMaterials.CINCINNASITE_DIAMOND);
-            ItemList.NETHER_RUBY_KNIFE = netherKnife("nether_ruby_knife", ToolMaterials.NETHER_RUBY);
+            ItemList.CINCINNASITE_KNIFE = knife("cincinnasite_knife", ToolMaterials.CINCINNASITE,
+                    new FabricItemSettings().group(group).fireproof());
+            ItemList.CINCINNASITE_DIAMOND_KNIFE = knife("cincinnasite_knife_diamond", ToolMaterials.CINCINNASITE_DIAMOND,
+                    new FabricItemSettings().group(group).fireproof());
+            ItemList.NETHER_RUBY_KNIFE = enchantKnife("nether_ruby_knife", ToolMaterials.NETHER_RUBY,
+                    new FabricItemSettings().group(group).fireproof());
         }
         if (FabricLoader.getInstance().isModLoaded("byg")) {
             ItemList.PENDORITE_KNIFE = knife("pendorite_knife", ToolMaterials.PENDORITE,
                     new FabricItemSettings().group(group));
+        }
+        if (FabricLoader.getInstance().isModLoaded("conjuring")) {
+            ItemList.SOUL_ALLOY_KNIFE = knife("soul_alloy_knife", ToolMaterials.SOUL_ALLOY,
+                    new FabricItemSettings().group(group).fireproof());
+        }
+        if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+            ItemList.WARDEN_KNIFE = knife("warden_knife", ToolMaterials.WARDEN,
+                    new FabricItemSettings().group(group).fireproof());
         }
         if (FabricLoader.getInstance().isModLoaded("dragonloot")) {
             ItemList.DRAGON_KNIFE = knife("dragon_knife", ToolMaterials.DRAGON,
@@ -159,9 +174,9 @@ public class ModRegistry {
                 new CustomKnifeItem(material, settings));
     }
 
-    private static Item netherKnife(String name, ToolMaterial material) {
+    private static Item enchantKnife(String name, ToolMaterial material, FabricItemSettings settings) {
         return Registry.register(Registry.ITEM, new Identifier(FarmersKnives.MODID, name),
-                new NetherKnifeItem(material, new FabricItemSettings().group(group).fireproof()));
+                new EnchantKnifeItem(material, settings));
     }
 
     private static Item twilightKnife(String name, ToolMaterial material, Item.Settings settings) {
