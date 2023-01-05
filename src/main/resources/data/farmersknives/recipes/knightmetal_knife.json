@@ -6,7 +6,7 @@
   ],
   "key": {
     "m": {
-      "tag": "c:ingots/knightmetal"
+      "item": "twilightforest:knightmetal_ingot"
     },
     "s": {
       "item": "minecraft:stick"

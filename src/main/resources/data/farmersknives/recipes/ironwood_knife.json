@@ -6,7 +6,7 @@
   ],
   "key": {
     "m": {
-      "tag": "c:ingots/ironwood"
+      "item": "twilightforest:ironwood_ingot"
     },
     "s": {
       "item": "minecraft:stick"

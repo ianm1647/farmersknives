@@ -6,7 +6,7 @@
   ],
   "key": {
     "m": {
-      "tag": "c:ingots/fiery"
+      "item": "twilightforest:fiery_ingot"
     },
     "s": {
       "item": "minecraft:stick"
