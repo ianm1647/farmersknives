@@ -1,8 +1,17 @@
 {
-  "type": "minecraft:smithing",
-  "base": {"item": "farmersdelight:netherite_knife"},
-  "addition": {"item": "dragonloot:dragon_scale"},
-  "result": {"item": "farmersknives:dragon_knife"},
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersdelight:netherite_knife"
+  },
+  "addition": {
+    "item": "dragonloot:celestium_ingot"
+  },
+  "result": {
+    "item": "farmersknives:dragon_knife"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
   "fabric:load_conditions": [
     {
       "condition": "fabric:any_mod_loaded",

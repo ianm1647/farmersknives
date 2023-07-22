@@ -78,7 +78,7 @@ public class ModRegistry {
             ItemList.DRAGON_KNIFE = knife("dragon_knife", new KnifeItem(ToolMaterials.DRAGON,
                     new FabricItemSettings().fireproof()));
         }
-        //if (FabricLoader.getInstance().isModLoaded("emerald_tools")) {
+        if (FabricLoader.getInstance().isModLoaded("emerald_tools")) {
             ItemList.EMERALD_KNIFE = knife("emerald_knife", new KnifeItem(ToolMaterials.EMERALD,
                     new FabricItemSettings()));
             ItemList.RUBY_KNIFE = knife("ruby_knife", new KnifeItem(ToolMaterials.RUBY,
@@ -93,7 +93,7 @@ public class ModRegistry {
                 ItemList.COPPER_KNIFE_ET = knife("copper_knife_et", new KnifeItem(ToolMaterials.COPPER_ET,
                         new FabricItemSettings()));
             }
-        //}
+        }
         if (FabricLoader.getInstance().isModLoaded("enderitemod")) {
             ItemList.ENDERITE_KNIFE = knife("enderite_knife", new KnifeItem(ToolMaterials.ENDERITE,
                     new FabricItemSettings().fireproof()));

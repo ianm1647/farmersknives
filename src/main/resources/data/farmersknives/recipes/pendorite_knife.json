@@ -1,8 +1,14 @@
 {
-  "type": "minecraft:smithing",
-  "base": {"item": "farmersdelight:netherite_knife"},
-  "addition": {"item": "byg:pendorite_ingot"},
-  "result": {"item": "farmersknives:pendorite_knife"},
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersdelight:netherite_knife"
+  },
+  "addition": {
+    "item": "byg:pendorite_ingot"
+  },
+  "result": {
+    "item": "farmersknives:pendorite_knife"
+  },
   "fabric:load_conditions": [
     {
       "condition": "fabric:any_mod_loaded",

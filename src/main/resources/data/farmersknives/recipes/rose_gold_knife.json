@@ -1,8 +1,14 @@
 {
-  "type": "minecraft:smithing",
-  "base": {"item": "farmersdelight:iron_knife"},
-  "addition": {"item": "additionaladditions:rose_gold_alloy"},
-  "result": {"item": "farmersknives:rose_gold_knife"},
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersdelight:iron_knife"
+  },
+  "addition": {
+    "item": "additionaladditions:rose_gold_alloy"
+  },
+  "result": {
+    "item": "farmersknives:rose_gold_knife"
+  },
   "fabric:load_conditions": [
     {
       "condition": "fabric:any_mod_loaded",
