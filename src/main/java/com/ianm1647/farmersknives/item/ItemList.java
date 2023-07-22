@@ -48,9 +48,9 @@ public class ItemList {
     public static Item EMERALD_KNIFE;
     public static Item RUBY_KNIFE;
     public static Item AMETHYST_KNIFE;
-    public static Item STEEL_KNIFE;
+    public static Item STEEL_KNIFE_ET;
     public static Item OBSIDIAN_KNIFE;
-    public static Item COPPER_KNIFE;
+    public static Item COPPER_KNIFE_ET;
 
     //enderite
     public static Item ENDERITE_KNIFE;
@@ -67,6 +67,8 @@ public class ItemList {
     public static Item BRONZE_KNIFE;
     public static Item CARMOT_KNIFE;
     public static Item CELESTIUM_KNIFE;
+
+    public static Item COPPER_KNIFE_MM;
     public static Item DURASTEEL_KNIFE;
     public static Item HALLOWED_KNIFE;
     public static Item KYBER_KNIFE;
@@ -80,6 +82,7 @@ public class ItemList {
     public static Item QUADRILLUM_KNIFE;
     public static Item RUNITE_KNIFE;
     public static Item STAR_PLATINUM_KNIFE;
+    public static Item STEEL_KNIFE_MM;
     public static Item STORMYX_KNIFE;
 
     //twilight forest
