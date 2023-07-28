@@ -87,12 +87,10 @@ public class ModRegistry {
                     new FabricItemSettings()));
             ItemList.OBSIDIAN_KNIFE = knife("obsidian_knife", new KnifeItem(ToolMaterials.OBSIDIAN,
                     new FabricItemSettings()));
-            if (!FabricLoader.getInstance().isModLoaded("mythic_metals")) {
-                ItemList.STEEL_KNIFE_ET = knife("steel_knife_et", new KnifeItem(ToolMaterials.STEEL_ET,
+            ItemList.STEEL_KNIFE_ET = knife("steel_knife_et", new KnifeItem(ToolMaterials.STEEL_ET,
                         new FabricItemSettings()));
-                ItemList.COPPER_KNIFE_ET = knife("copper_knife_et", new KnifeItem(ToolMaterials.COPPER_ET,
+            ItemList.COPPER_KNIFE_ET = knife("copper_knife_et", new KnifeItem(ToolMaterials.COPPER_ET,
                         new FabricItemSettings()));
-            }
         }
         if (FabricLoader.getInstance().isModLoaded("enderitemod")) {
             ItemList.ENDERITE_KNIFE = knife("enderite_knife", new KnifeItem(ToolMaterials.ENDERITE,
