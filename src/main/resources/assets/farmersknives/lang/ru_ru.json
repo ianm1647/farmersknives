@@ -1,0 +1,75 @@
+{
+  "item.farmersknives.vibranium_knife": "Вибраниевый нож",
+  "item.farmersknives.adamantium_knife": "Адамантиевый нож",
+  "item.farmersknives.nether_brick_knife": "Нож из незерских кирпичей",
+  "item.farmersknives.oneshotium_knife": "Ваншотиевый нож",
+
+  "item.farmersknives.rose_gold_knife": "Нож из розового золота",
+  "item.farmersknives.gilded_netherite_knife": "Позолоченный незеритовый нож",
+
+  "item.farmersknives.netherite_iron_knife": "Незеритово-железный нож",
+  "item.farmersknives.netherite_gold_knife": "Незеритово-золотой нож",
+  "item.farmersknives.netherite_emerald_knife": "Незеритово-изумрудный нож",
+  "item.farmersknives.netherite_diamond_knife": "Незеритово-алмазный нож",
+
+  "item.farmersknives.chitin_knife": "Хитиновый нож",
+
+  "item.farmersknives.aeternium_knife": "Этерниевый нож",
+  "item.farmersknives.thallasium_knife": "Таллазиевый нож",
+  "item.farmersknives.terminite_knife": "Терминитовый нож",
+
+  "item.farmersknives.cincinnasite_knife": "Цинциннаситовый нож",
+  "item.farmersknives.cincinnasite_knife_diamond": "Цинциннасит-алмазный нож",
+  "item.farmersknives.nether_ruby_knife": "Незер-рубиновый нож",
+
+  "item.farmersknives.enderite_knife": "Эндеритовый нож",
+
+  "item.farmersknives.emerald_knife": "Изумрудный нож",
+  "item.farmersknives.ruby_knife": "Рубиновый нож",
+  "item.farmersknives.amethyst_knife": "Аметистовый нож",
+  "item.farmersknives.steel_knife_et": "Стальной нож",
+  "item.farmersknives.obsidian_knife": "Обсидиановый нож",
+  "item.farmersknives.copper_knife_et": "Медный нож",
+
+  "item.farmersknives.soul_alloy_knife": "Нож из сплава души",
+
+  "item.farmersknives.warden_knife": "Нож хранителя",
+
+  "item.farmersknives.dragon_knife": "Драконий нож",
+
+  "item.farmersknives.gobber_knife": "Гоббер-нож",
+  "item.farmersknives.nether_gobber_knife": "Незерский нож",
+  "item.farmersknives.end_gobber_knife": "Эндер-нож",
+
+  "item.farmersknives.adamantite_knife": "Адамантитовый нож",
+  "item.farmersknives.aquarium_knife": "Аквариумный нож",
+  "item.farmersknives.banglum_knife": "Нож из банглама",
+  "item.farmersknives.bronze_knife": "Бронзовый нож",
+  "item.farmersknives.carmot_knife": "Кармотный нож",
+  "item.farmersknives.celestium_knife": "Целестиевый нож",
+  "item.farmersknives.copper_knife_mm": "Медный нож",
+  "item.farmersknives.durasteel_knife": "Нож из дюрастали",
+  "item.farmersknives.hallowed_knife": "Священный нож",
+  "item.farmersknives.kyber_knife": "Кибер-нож",
+  "item.farmersknives.legendary_banglum_knife": "Легендарный банглумовый нож",
+  "item.farmersknives.metallurgium_knife": "Металлургический нож",
+  "item.farmersknives.mythril_knife": "Мифриловый нож",
+  "item.farmersknives.orichalcum_knife": "Орихалковый нож",
+  "item.farmersknives.osmium_knife": "Осмиевый нож",
+  "item.farmersknives.palladium_knife": "Палладиевый нож",
+  "item.farmersknives.prometheum_knife": "Нож Прометея",
+  "item.farmersknives.quadrillum_knife": "Четырёхгранный нож",
+  "item.farmersknives.runite_knife": "Рунитовый нож",
+  "item.farmersknives.star_platinum_knife": "Звездный платиновый нож",
+  "item.farmersknives.steel_knife_mm": "Стальной нож",
+  "item.farmersknives.stormyx_knife": "Стормиксовый нож",
+
+  "item.farmersknives.ironwood_knife": "Нож из железного дерева",
+  "item.farmersknives.fiery_knife": "Огненный нож",
+  "item.farmersknives.steeleaf_knife": "Нож из стального листа",
+  "item.farmersknives.knightmetal_knife": "Нож из рыцарского металла",
+
+  "item.farmersknives.pendorite_knife": "Пендоритовый нож",
+
+  "item.farmersknives.cryomarble_knife": "Криомраморный нож"
+}
