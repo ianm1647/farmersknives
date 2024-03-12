@@ -212,6 +212,18 @@
     {
       "id": "farmersknives:cryomarble_knife",
       "required": false
+    },
+    {
+      "id": "farmersknives:manasteel_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:elementium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:terra_knife",
+      "required": false
     }
   ]
 }
