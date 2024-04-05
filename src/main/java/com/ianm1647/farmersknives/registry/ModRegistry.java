@@ -2,6 +2,9 @@ package com.ianm1647.farmersknives.registry;
 
 import com.ianm1647.farmersknives.FarmersKnives;
 import com.ianm1647.farmersknives.item.*;
+import com.ianm1647.farmersknives.item.compat.botania.ElementiumKnifeItem;
+import com.ianm1647.farmersknives.item.compat.botania.ManasteelKnifeItem;
+import com.ianm1647.farmersknives.item.compat.botania.TerrasteelKnifeItem;
 import com.nhoryzon.mc.farmersdelight.FarmersDelightMod;
 import com.nhoryzon.mc.farmersdelight.item.KnifeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -61,6 +64,11 @@ public class ModRegistry {
                     new FabricItemSettings().fireproof()));
             ItemList.NETHER_RUBY_KNIFE = knife("nether_ruby_knife", new KnifeItem(ToolMaterials.NETHER_RUBY,
                     new FabricItemSettings().fireproof()));
+        }
+        if (FabricLoader.getInstance().isModLoaded("botania")) {
+            ItemList.MANASTEEL_KNIFE = knife("manasteel_knife", new ManasteelKnifeItem(new FabricItemSettings()));
+            ItemList.ELEMENTIUM_KNIFE = knife("elementium_knife", new ElementiumKnifeItem(new FabricItemSettings()));
+            ItemList.TERRA_KNIFE = knife("terra_knife", new TerrasteelKnifeItem(new FabricItemSettings()));
         }
         if (FabricLoader.getInstance().isModLoaded("byg")) {
             ItemList.PENDORITE_KNIFE = knife("pendorite_knife", new KnifeItem(ToolMaterials.PENDORITE,

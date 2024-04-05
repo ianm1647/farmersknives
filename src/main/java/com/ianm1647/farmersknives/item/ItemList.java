@@ -32,6 +32,11 @@ public class ItemList {
     public static Item CINCINNASITE_DIAMOND_KNIFE;
     public static Item NETHER_RUBY_KNIFE;
 
+    //botania
+    public static Item MANASTEEL_KNIFE;
+    public static Item ELEMENTIUM_KNIFE;
+    public static Item TERRA_KNIFE;
+
     //byg
     public static Item PENDORITE_KNIFE;
 

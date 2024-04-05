@@ -6,20 +6,20 @@
   ],
   "key": {
     "m": {
-      "item": "betterend:terminite_ingot"
+      "item": "botania:terrasteel_ingot"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "farmersknives:terminite_knife"
+    "item": "farmersknives:terra_knife"
   },
   "fabric:load_conditions": [
     {
       "condition": "fabric:any_mod_loaded",
       "values": [
-        "betterend"
+        "botania"
       ]
     }
   ]
