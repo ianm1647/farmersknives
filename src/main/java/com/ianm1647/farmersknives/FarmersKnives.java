@@ -27,7 +27,7 @@ public class FarmersKnives implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Registry.register(Registries.ITEM_GROUP, GROUP, FabricItemGroup.builder()
-				.displayName(Text.literal("itemGroup.farmersknives.group"))
+				.displayName(Text.translatable("itemGroup.farmersknives.group"))
 				.icon(() -> new ItemStack(ModItems.IRON_KNIFE.get()))
 				.build());
 
