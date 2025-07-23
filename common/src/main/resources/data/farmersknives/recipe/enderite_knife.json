@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "farmersdelight:netherite_knife",
+  "addition": "enderitemod:enderite_ingot",
+  "result": {
+    "id": "farmersknives:enderite_knife"
+  },
+  "template": "enderitemod:enderite_upgrade_smithing_template"
+}

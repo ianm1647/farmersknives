@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "farmersdelight:diamond_knife",
+  "addition": "end_reborn:featherzeal_ingot",
+  "result": {
+    "id": "farmersknives:featherzeal_knife"
+  },
+  "template": "end_reborn:featherzeal_upgrade_smithing_template"
+}

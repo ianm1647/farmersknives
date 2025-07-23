@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m",
+    "s"
+  ],
+  "key": {
+    "m": "minecraft:copper_ingot",
+    "s": "minecraft:stick"
+  },
+  "result": {
+    "id": "farmersknives:copper_knife"
+  }
+}

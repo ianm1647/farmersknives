@@ -1,115 +1,75 @@
 plugins {
-	id 'fabric-loom' version '1.5-SNAPSHOT'
-	id 'maven-publish'
+    id 'dev.architectury.loom' version '1.10-SNAPSHOT' apply false
+    id 'architectury-plugin' version '3.4-SNAPSHOT'
+    id 'com.gradleup.shadow' version '8.3.6' apply false
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
-
-archivesBaseName = project.archives_base_name
-version = project.mod_version
-group = project.maven_group
-
-repositories {
-	maven { url = "https://maven.shedaniel.me/" }
-	maven { url = "https://api.modrinth.com/maven" }
-	maven { url = "https://maven.wispforest.io/" }
-	maven { url = "https://maven.terraformersmc.com/" }
-	maven { url = "https://maven.blamejared.com/" }
-
-	maven { url = 'https://maven.greenhouseteam.dev/releases/' }
-	maven { url = "https://mvn.devos.one/releases/" }
-	maven { url = "https://jitpack.io/" }
-	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" }
-
-	exclusiveContent {
-		forRepository {
-			maven {
-				url 'https://cursemaven.com'
-			}
-		}
-		filter {
-			includeGroup 'curse.maven'
-		}
-	}
+architectury {
+    minecraft = project.minecraft_version
 }
 
-dependencies {
-	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
-	modImplementation("vectorwing:FarmersDelight-Refabricated:${project.delight_version}")
-
-	modCompileOnly ("vazkii.botania:Botania:${project.botania_version}") {
-		exclude group: "dev.onyxstudios.cardinal-components-api"
-		exclude group: "com.jamieswhiteshirt"
-		exclude group: "com.github.emilyploszaj"
-		exclude group: "com.terraformersmc"
-	}
-
-	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}"
-	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}"
-
-	modApi "com.terraformersmc:modmenu:${project.modmenu_version}"
+allprojects {
+    group = rootProject.maven_group
+    version = rootProject.mod_version
 }
 
-processResources {
-	inputs.property "version", project.version
+subprojects {
+    apply plugin: 'dev.architectury.loom'
+    apply plugin: 'architectury-plugin'
+    apply plugin: 'maven-publish'
 
-	filesMatching("fabric.mod.json") {
-		expand "version": project.version
-	}
-}
+    base {
+        // Set up a suffixed format for the mod jar names, e.g. `example-fabric`.
+        archivesName = "$rootProject.archives_name-$project.name"
+    }
 
-tasks.withType(JavaCompile).configureEach {
-	it.options.release = 17
-}
+    repositories {
+        // Add repositories to retrieve artifacts from in here.
+        // You should only use this when depending on other mods because
+        // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+        // See https://docs.gradle.org/current/userguide/declaring_repositories.html
+        // for more information about repositories.
+        maven { url = "https://api.modrinth.com/maven" }
+    }
 
-java {
-	withSourcesJar()
-}
+    loom {
+        silentMojangMappingsLicense()
+    }
 
-jar {
-	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}"}
-	}
-}
+    dependencies {
+        minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
+        mappings loom.officialMojangMappings()
+    }
 
-publishing {
-	publications {
-		mavenJava(MavenPublication) {
-			from components.java
-		}
-	}
+    java {
+        // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+        // if it is present.
+        // If you remove this line, sources will not be generated.
+        withSourcesJar()
 
-	repositories {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
 
-	}
-}
+    tasks.withType(JavaCompile).configureEach {
+        it.options.release = 21
+    }
 
-loom {
-	runs {
-		datagenClient {
-			inherit client
-			name "Data Generation"
-			vmArg "-Dfabric-api.datagen"
-			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
-			vmArg "-Dfabric-api.datagen.modid=${project.modid}"
+    // Configure Maven publishing.
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                artifactId = base.archivesName.get()
+                from components.java
+            }
+        }
 
-			runDir "build/datagen"
-		}
-	}
-}
-
-sourceSets {
-	main {
-		resources {
-			srcDirs += [
-					'src/main/generated'
-			]
-		}
-	}
+        // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+        repositories {
+            // Add repositories to publish to here.
+            // Notice: This block does NOT have the same function as the block in the top level.
+            // The repositories here will be used for publishing your artifact, not for
+            // retrieving dependencies.
+        }
+    }
 }

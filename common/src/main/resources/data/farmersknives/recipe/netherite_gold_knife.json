@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "farmersknives:netherite_iron_knife",
+  "addition": "advancednetherite:netherite_gold_ingot",
+  "result": {
+    "id": "farmersknives:netherite_gold_knife"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

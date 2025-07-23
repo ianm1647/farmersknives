@@ -1,0 +1,213 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersknives:netherite_iron_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:netherite_gold_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:netherite_emerald_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:netherite_diamond_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:aeternium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:thallasium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:terminite_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:cincinnasite_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:cincinnasite_knife_diamond",
+      "required": false
+    },
+    {
+      "id": "farmersknives:enderite_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:emerald_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:ruby_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:amethyst_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:steel_knife_et",
+      "required": false
+    },
+    {
+      "id": "farmersknives:obsidian_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:copper_knife_et",
+      "required": false
+    },
+    {
+      "id": "farmersknives:dragon_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:gobber_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:nether_gobber_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:end_gobber_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:ironwood_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:fiery_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:steeleaf_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:knightmetal_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:pendorite_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:adamantite_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:aquarium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:banglum_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:bronze_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:carmot_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:celestium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:durasteel_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:hallowed_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:kyber_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:legendary_banglum_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:metallurgium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:mythril_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:orichalcum_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:osmium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:palladium_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:prometheum_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:quadrillum_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:runite_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:star_platinum_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:stormyx_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:tidesinger_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:copper_knife_mm",
+      "required": false
+    },
+    {
+      "id": "farmersknives:steel_knife_mm",
+      "required": false
+    },
+    {
+      "id": "farmersknives:nether_ruby_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:warden_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:copper_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:rose_knife",
+      "required": false
+    }
+  ]
+}

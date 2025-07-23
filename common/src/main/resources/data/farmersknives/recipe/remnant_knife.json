@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "farmersdelight:diamond_knife",
+  "addition": "end_reborn:remnant_ingot",
+  "result": {
+    "id": "farmersknives:remnant_knife"
+  },
+  "template": "end_reborn:remnant_upgrade_smithing_template"
+}

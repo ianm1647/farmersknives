@@ -1,9 +1,7 @@
-# Fabric Example Mod
+# Farmer's Knives
 
-## Setup
+Farmer's Knives adds knife support for many other mods.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+Available for both Fabric & Neoforge on versions above 1.21
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Licensed under MIT license.

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersknives:featherzeal_knife",
+      "required": false
+    }
+  ]
+}
