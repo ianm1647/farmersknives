@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m",
+    "s"
+  ],
+  "key": {
+    "m": {
+      "item": "twilightforest:ironwood_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "farmersknives:ironwood_knife",
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:knockback": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersknives:aquarium_knife"
+  },
+  "addition": {
+    "tag": "mythicmetals:tidesinger_coral"
+  },
+  "result": {
+    "id": "farmersknives:tidesinger_knife"
+  },
+  "template": {
+    "item": "mythicmetals:tidesinger_smithing_template"
+  }
+}

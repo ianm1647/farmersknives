@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersknives:banglum_knife"
+  },
+  "addition": {
+    "item": "mythicmetals:banglum_chunk"
+  },
+  "result": {
+    "id": "farmersknives:legendary_banglum_knife"
+  },
+  "template": {
+    "item": "mythicmetals:legendary_banglum_smithing_template"
+  }
+}

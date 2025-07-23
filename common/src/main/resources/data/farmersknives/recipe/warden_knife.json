@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersdelight:netherite_knife"
+  },
+  "addition": {
+    "item": "deeperdarker:reinforced_echo_shard"
+  },
+  "result": {
+    "id": "farmersknives:warden_knife"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

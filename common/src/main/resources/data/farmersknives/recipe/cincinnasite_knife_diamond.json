@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m",
+    "s"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:diamond"
+    },
+    "s": {
+      "item": "farmersknives:cincinnasite_knife"
+    }
+  },
+  "result": {
+    "id": "farmersknives:cincinnasite_knife_diamond"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "betternether"
+      ]
+    }
+  ]
+}

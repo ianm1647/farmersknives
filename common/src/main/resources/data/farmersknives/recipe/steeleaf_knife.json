@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m",
+    "s"
+  ],
+  "key": {
+    "m": {
+      "item": "twilightforest:steeleaf_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "farmersknives:steeleaf_knife",
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:looting": 2
+        }
+      }
+    }
+  }
+}

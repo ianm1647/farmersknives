@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersdelight:netherite_knife"
+  },
+  "addition": {
+    "item": "mythicmetals:metallurgium_ingot"
+  },
+  "result": {
+    "id": "farmersknives:metallurgium_knife"
+  },
+  "template": {
+    "item": "mythicmetals:unobtainium_smithing_template"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m",
+    "s"
+  ],
+  "key": {
+    "m": {
+      "item": "betterend:aeternium_ingot"
+    },
+    "s": {
+      "item": "betterend:leather_wrapped_stick"
+    }
+  },
+  "result": {
+    "id": "farmersknives:aeternium_knife"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ]
+}

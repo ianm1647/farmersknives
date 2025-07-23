@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m",
+    "s"
+  ],
+  "key": {
+    "m": {
+      "item": "gobber2:gobber2_ingot_end"
+    },
+    "s": {
+      "item": "gobber2:gobber2_rod_end"
+    }
+  },
+  "result": {
+    "id": "farmersknives:end_gobber_knife"
+  }
+}

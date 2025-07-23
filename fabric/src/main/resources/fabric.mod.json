@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "farmersknives",
+  "version": "${version}",
+  "name": "Farmer's Knives",
+  "description": "Adds Knives to Farmer's Delight for many other mods",
+  "authors": [
+    "ianm1647",
+    "Rebel459"
+  ],
+  "contact": {
+    "sources": "https://github.com/ianm1647/farmersknives"
+  },
+  "license": "MIT",
+  "icon": "assets/farmersknives/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.ianm1647.farmersknives.fabric.FarmersKnivesFabric"
+    ],
+    "client": [
+      "com.ianm1647.farmersknives.fabric.client.FarmersKnivesFabricClient"
+    ]
+  },
+  "mixins": [
+    "farmersknives.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": ">=1.21 <=1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  }
+}

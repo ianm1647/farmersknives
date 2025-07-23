@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m",
+    "s"
+  ],
+  "key": {
+    "m": {
+      "item": "betternether:cincinnasite_ingot"
+    },
+    "s": {
+      "item": "betternether:nether_reed_stem"
+    }
+  },
+  "result": {
+    "id": "farmersknives:cincinnasite_knife"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersdelight:netherite_knife"
+  },
+  "addition": {
+    "item": "advancednetherite:netherite_iron_ingot"
+  },
+  "result": {
+    "id": "farmersknives:netherite_iron_knife"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}
