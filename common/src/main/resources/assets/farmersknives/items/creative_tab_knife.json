@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "farmersknives:item/copper_knife"
+    "model": "farmersknives:item/creative_tab_knife"
   }
 }
