@@ -208,6 +208,14 @@
     {
       "id": "farmersknives:rose_knife",
       "required": false
+    },
+    {
+      "id": "farmersknives:remnant_knife",
+      "required": false
+    },
+    {
+      "id": "farmersknives:featherzeal_knife",
+      "required": false
     }
   ]
 }
