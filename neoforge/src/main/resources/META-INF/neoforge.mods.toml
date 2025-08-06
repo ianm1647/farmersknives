@@ -16,7 +16,7 @@ Adds Knives to Farmer's Delight for many other mods
 [[dependencies.farmersknives]]
 modId = "neoforge"
 type = "required"
-versionRange = "[1.21,1.21.1)"
+versionRange = "[1.21,1.21.2)"
 ordering = "NONE"
 side = "BOTH"
 
