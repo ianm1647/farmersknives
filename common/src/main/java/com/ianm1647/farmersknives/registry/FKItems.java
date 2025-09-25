@@ -1,10 +1,10 @@
 package com.ianm1647.farmersknives.registry;
 
+import com.ianm1647.farmersknives.FKPlatform;
+import com.ianm1647.farmersknives.FarmersKnives;
 import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
-import com.ianm1647.farmersknives.FKPlatform;
-import com.ianm1647.farmersknives.FarmersKnives;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
 
@@ -324,7 +324,7 @@ public class FKItems {
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
                     ));
             RegistrySupplier<Item> TIDESINGER_KNIFE = ITEMS.register(
-                    "stormyx_knife", () -> FKPlatform.createKnifeItem(FKTiers.TIDESINGER,
+                    "tidesinger_knife", () -> FKPlatform.createKnifeItem(FKTiers.TIDESINGER,
                             new Item.Properties()
                                     .stacksTo(1)
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
