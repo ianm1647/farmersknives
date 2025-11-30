@@ -2,9 +2,12 @@ package com.ianm1647.farmersknives.registry;
 
 import com.google.common.base.Suppliers;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -133,7 +136,16 @@ public enum FKTiers implements Tier {
     // Progression Reborn
 
     COPPER(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 190, 5.0F, 1.0F, 14, () -> Ingredient.of(Items.COPPER_INGOT)),
-    ROSE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 281, 10.0F, 2.0F, 22, () -> Ingredient.of(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("progression_reborn", "rose_ingot"))));
+    ROSE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 281, 10.0F, 2.0F, 22, () -> Ingredient.of(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("progression_reborn", "rose_ingot")))),
+
+    // Create Stuff and Additions
+
+    BRASS(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 450, 8.0F, 2.0F, 14, () -> Ingredient.of(createTag(ResourceLocation.parse("c:ingots/brass")))),
+    ZINC(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 7.0F, 1.0F, 11, () -> Ingredient.of(createTag(ResourceLocation.parse("c:ingots/zinc"))));
+
+    private static TagKey<Item> createTag(ResourceLocation resourcelocation) {
+        return TagKey.create(Registries.ITEM, resourcelocation);
+    }
 
     private final TagKey<Block> incorrectBlocksForDrops;
     private final int uses;

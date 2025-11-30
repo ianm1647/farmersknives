@@ -375,5 +375,22 @@ public class FKItems {
                                     .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
                     ));
         }
+
+        if (Platform.isModLoaded("create_sa")) {
+            RegistrySupplier<Item> BRASS_KNIFE = ITEMS.register(
+                    "brass_knife", () -> FKPlatform.createKnifeItem(FKTiers.BRASS,
+                            new Item.Properties()
+                                    .stacksTo(1)
+                                    .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
+                    ));
+
+            RegistrySupplier<Item> ZINC_KNIFE = ITEMS.register(
+                    "zinc_knife", () -> FKPlatform.createKnifeItem(FKTiers.ZINC,
+                            new Item.Properties()
+                                    .stacksTo(1)
+                                    .fireResistant()
+                                    .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
+                    ));
+        }
     }
 }
