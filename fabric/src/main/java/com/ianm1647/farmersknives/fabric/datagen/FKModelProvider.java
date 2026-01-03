@@ -23,7 +23,6 @@ public final class FKModelProvider extends FabricModelProvider {
 		generator.generateFlatItem(FKItems.FEATHERZEAL_KNIFE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 		generator.generateFlatItem(FKItems.REMNANT_KNIFE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
-		generator.generateFlatItem(FKItems.COPPER_KNIFE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 		generator.generateFlatItem(FKItems.ROSE_KNIFE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
 		generator.generateFlatItem(FKItems.ENDERITE_KNIFE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

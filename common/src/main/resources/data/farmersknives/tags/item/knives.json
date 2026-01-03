@@ -62,10 +62,6 @@
       "required": false
     },
     {
-      "id": "farmersknives:copper_knife_et",
-      "required": false
-    },
-    {
       "id": "farmersknives:dragon_knife",
       "required": false
     },
@@ -186,10 +182,6 @@
       "required": false
     },
     {
-      "id": "farmersknives:copper_knife_mm",
-      "required": false
-    },
-    {
       "id": "farmersknives:steel_knife_mm",
       "required": false
     },
@@ -199,10 +191,6 @@
     },
     {
       "id": "farmersknives:warden_knife",
-      "required": false
-    },
-    {
-      "id": "farmersknives:copper_knife",
       "required": false
     },
     {

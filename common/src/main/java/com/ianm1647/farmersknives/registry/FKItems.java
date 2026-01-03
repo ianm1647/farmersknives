@@ -81,10 +81,6 @@ public class FKItems {
 
     // Progression Reborn
 
-    public static final RegistrySupplier<Item> COPPER_KNIFE = PROGRESSION_REBORN_ITEMS.register(
-            "copper_knife", () -> FKPlatform.createKnifeItem(
-                    knifeItem(FKToolMaterial.COPPER, "copper_knife")
-            ));
     public static final RegistrySupplier<Item> ROSE_KNIFE = PROGRESSION_REBORN_ITEMS.register(
             "rose_knife", () -> FKPlatform.createKnifeItem(
                     knifeItem(FKToolMaterial.ROSE, "rose_knife")

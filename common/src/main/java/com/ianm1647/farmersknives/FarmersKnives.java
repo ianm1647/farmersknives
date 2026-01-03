@@ -2,12 +2,13 @@ package com.ianm1647.farmersknives;
 
 import com.ianm1647.farmersknives.registry.FKCreativeTab;
 import com.ianm1647.farmersknives.registry.FKItems;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.Identifier;
 
 public final class FarmersKnives {
     public static final String MOD_ID = "farmersknives";
-    public static ResourceLocation id(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    public static Identifier id(String path) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 
     public static void init() {
