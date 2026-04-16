@@ -17,6 +17,9 @@ import java.util.function.Supplier;
 
 public enum FKTiers implements Tier {
 
+    // Vanilla
+    COPPER(BlockTags.INCORRECT_FOR_STONE_TOOL, 190, 5.0F, 1.0F, 13, () -> Ingredient.of(Items.COPPER_INGOT)),
+
     //advanced netherite
     NETHERITE_IRON(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2281, 12.0F, 4.0F, 15,
             () -> Ingredient.of(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("advancednetherite", "netherite_iron_ingot")))),
@@ -135,8 +138,7 @@ public enum FKTiers implements Tier {
 
     // Progression Reborn
 
-    COPPER(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 190, 5.0F, 1.0F, 14, () -> Ingredient.of(Items.COPPER_INGOT)),
-    ROSE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 281, 10.0F, 2.0F, 22, () -> Ingredient.of(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("progression_reborn", "rose_ingot")))),
+    ROSE(BlockTags.INCORRECT_FOR_IRON_TOOL, 281, 10.0F, 2.0F, 22, () -> Ingredient.of(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("progression_reborn", "rose_ingot")))),
 
     // Create Stuff and Additions
 
@@ -197,6 +199,6 @@ public enum FKTiers implements Tier {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return (Ingredient) this.repairIngredient.get();
     }
 }

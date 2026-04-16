@@ -21,6 +21,15 @@ public class FKItems {
     public static void init() {
         ITEMS.register();
 
+        if (Platform.isModLoaded("vanillabackport") || Platform.isModLoaded("progression_reborn") || Platform.isModLoaded("copperagebackport")) {
+            RegistrySupplier<Item> COPPER_KNIFE = ITEMS.register(
+                    "copper_knife", () -> FKPlatform.createKnifeItem(FKTiers.COPPER,
+                            new Item.Properties()
+                                    .stacksTo(1)
+                                    .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
+                    ));
+        }
+
         if (Platform.isModLoaded("advancednetherite")) {
             RegistrySupplier<Item> NETHERITE_IRON_KNIFE = ITEMS.register(
                     "netherite_iron_knife", () -> FKPlatform.createKnifeItem(FKTiers.NETHERITE_IRON,
@@ -332,12 +341,6 @@ public class FKItems {
         }
 
         if (Platform.isModLoaded("progression_reborn")) {
-            RegistrySupplier<Item> COPPER_KNIFE = ITEMS.register(
-                    "copper_knife", () -> FKPlatform.createKnifeItem(FKTiers.COPPER,
-                            new Item.Properties()
-                                    .stacksTo(1)
-                                    .arch$tab(FKCreativeTab.FARMERS_KNIVES_TAB)
-                    ));
             RegistrySupplier<Item> ROSE_KNIFE = ITEMS.register(
                     "rose_knife", () -> FKPlatform.createKnifeItem(FKTiers.ROSE,
                             new Item.Properties()
